@@ -10,11 +10,42 @@
 .fg .fsel, .fg .finput { width: auto; min-width: 110px; }
 .cnt { padding: 0 28px 8px; font-size: 13px; font-weight: 700; color: var(--dark); }
 .tableWrap { flex: 1; overflow-y: auto; padding: 0 28px 16px; }
-table { width: 100%; border-collapse: collapse; font-size: 13px; border: 1px solid #ddd; }
-thead tr { background: var(--dark); }
-thead th { color: #fff; font-size: 12px; font-weight: 700; padding: 8px 12px; text-align: left; border-right: 1px solid #2c3e50; letter-spacing: .5px; }
-thead th:last-child { border-right: none; }
-tbody tr { background: #fff; }
-tbody tr:nth-child(even) { background: #F0F0EC; }
-tbody tr:hover { background: #e8e8e2; }
-tbody td { padding: 7px 12px; border-bottom: 1px solid #eee; }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #ddd;
+}
+
+.table thead tr { background: var(--dark); }
+
+.table thead th {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 12px;
+  text-align: left;
+  border-right: 1px solid #2c3e50;
+  letter-spacing: .5px;
+}
+
+.table thead th:last-child {
+  border-right: none;
+}
+
+.table tbody tr {
+  background: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #F0F0EC;
+}
+
+.table tbody tr:hover {
+  background: #e8e8e2;
+}
+
+.table tbody td {
+  padding: 7px 12px;
+  border-bottom: 1px solid #eee;
+}
